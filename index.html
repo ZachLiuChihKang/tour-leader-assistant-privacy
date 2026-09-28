@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>隱私權政策 — 領隊帶團助手</title>
+<style>
+  body { font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif; max-width: 720px; margin: 32px auto; padding: 0 16px; color: #222; line-height: 1.7; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; margin-top: 32px; border-top: 1px solid #ddd; padding-top: 16px; }
+  .notice { background: #fff3cd; border: 1px solid #ffe69c; border-radius: 6px; padding: 12px 16px; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; font-size: 14px; vertical-align: top; }
+  th { background: #f4f4f4; }
+  footer { color: #666; font-size: 13px; margin-top: 40px; border-top: 1px solid #ddd; padding-top: 16px; }
+</style>
+</head>
+<body>
+<h1>隱私權政策</h1>
+<p><strong>適用 App：</strong>領隊帶團助手（Tour Leader Assistant）　<strong>最後更新：</strong>2026-09-28</p>
+
+<div class="notice">
+<strong>目前階段的重要說明：</strong>本 App 目前處於開發測試階段（Google Play Internal Testing），
+<strong>僅供開發者本人（一位領隊）帶團時自用</strong>，尚未對外公開發行、尚未開放給其他使用者下載。
+本政策會隨著功能開發進度更新；若未來開放給其他領隊使用（正式上架），會在此頁面公告修訂版本。
+</div>
+
+<h2>我們是誰</h2>
+<p>本 App 由個人開發者獨立開發與維運，聯絡信箱：<a href="mailto:chikang.liu@gmail.com">chikang.liu@gmail.com</a>。</p>
+
+<h2>我們收集哪些資料、為什麼收集</h2>
+<table>
+<tr><th>資料類型</th><th>用途</th><th>存放位置</th></tr>
+<tr>
+  <td>收據照片</td>
+  <td>供 AI 辨識日期、金額、幣別、店名等欄位，協助帳目登錄</td>
+  <td>手機本機（App 私有儲存空間）；上傳照片時暫時傳送到開發者自建的後端伺服器，
+      再轉送給 AI 服務商（OpenRouter／其上游模型）做辨識，辨識完成後由後端捨棄，
+      不在伺服器端長期保存</td>
+</tr>
+<tr>
+  <td>手動輸入的帳目資料（店名、金額、幣別、類別、備註等）</td>
+  <td>報帳記錄與匯出報帳單使用</td>
+  <td>僅存於手機本機資料庫，不會自動上傳或備份到雲端</td>
+</tr>
+<tr>
+  <td>匯率查詢（幣別代碼，例如 VND、USD）</td>
+  <td>換算「折合台幣」金額</td>
+  <td>由後端伺服器代為查詢公開匯率 API（open.er-api.com），只傳送幣別代碼，
+      不含任何個人資料</td>
+</tr>
+</table>
+
+<p>本 App <strong>沒有帳號登入系統、沒有廣告、沒有第三方分析或追蹤工具</strong>（例如沒有
+Google Analytics、Facebook SDK 等），不會將資料用於行銷或販售給第三方。</p>
+
+<h2>用到的手機權限</h2>
+<table>
+<tr><th>權限</th><th>用途</th></tr>
+<tr><td>相機（Camera）</td><td>拍攝收據照片，供 AI 辨識與留存憑證用</td></tr>
+<tr><td>網路（Internet）</td><td>上傳收據照片給後端做 AI 辨識、查詢即時匯率</td></tr>
+</table>
+<p>本 App <strong>目前沒有使用</strong>背景定位（background location）權限；若未來加入 GPS
+行程提醒功能並需要此權限，會在啟用前更新本頁面，並在系統詢問定位權限之前，
+另外顯示明確的說明畫面。</p>
+
+<h2>資料保存與刪除</h2>
+<p>收據照片與帳目資料保存在使用者的手機本機儲存空間，直到使用者手動刪除該筆資料，
+或解除安裝本 App。開發者的後端伺服器只在「即時處理 AI 辨識請求」的當下短暫經手照片資料，
+不做長期保存；伺服器僅記錄基本的請求技術紀錄（例如請求時間、耗時），供除錯使用，
+不含照片內容本身。</p>
+
+<h2>資料安全</h2>
+<p>照片上傳過程使用加密連線傳輸；AI 服務商（OpenRouter 及其上游模型）的資料處理受其自身
+隱私權政策規範。</p>
+
+<h2>兒童隱私</h2>
+<p>本 App 設計給成年領隊使用，不刻意鎖定或收集兒童的個人資料。</p>
+
+<h2>本政策的修訂</h2>
+<p>本政策可能隨 App 功能增加（例如未來的多人帳號、GPS 提醒、行程確認等功能）而更新，
+修訂後會更新上方的「最後更新」日期。若有重大變更（例如開始蒐集新類型的個人資料），
+會在頁面上明顯標示。</p>
+
+<h2>聯絡我們</h2>
+<p>對本政策或資料處理方式有任何疑問，歡迎來信：
+<a href="mailto:chikang.liu@gmail.com">chikang.liu@gmail.com</a></p>
+
+<footer>此頁面為領隊帶團助手 App 的隱私權政策公開頁面，供 Google Play 上架審核與使用者查閱。</footer>
+</body>
+</html>
